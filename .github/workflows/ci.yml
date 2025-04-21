@@ -1,0 +1,16 @@
+name: Simple CI
+
+on:
+  push:
+    branches: [ main ]  # If your branch name is not main, change it
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Display a success message
+      run: echo "🎉 CI pipeline is working!"
