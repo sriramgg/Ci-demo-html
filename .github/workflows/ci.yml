@@ -2,7 +2,7 @@ name: Simple CI
 
 on:
   push:
-    branches: [ main ]  # If your branch name is not main, change it
+    branches: [ main ]
 
 jobs:
   build:
